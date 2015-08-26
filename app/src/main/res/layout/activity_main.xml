@@ -1,0 +1,74 @@
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingRight="16dp"
+    android:paddingTop="16dp"
+    android:paddingBottom="16dp"
+    android:paddingLeft="16dp"
+    >
+
+
+    <TextView
+        android:id="@+id/quantityTextview"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Quantity"
+        android:textAllCaps="true"
+        android:layout_alignParentLeft="true"
+        />
+    <Button
+        android:id="@+id/plusButton"
+        android:layout_width="50dp"
+        android:layout_height="wrap_content"
+        android:text="+"
+        android:layout_below="@+id/quantityTextview"
+        android:layout_alignParentLeft="true"
+        android:onClick="plusClick"/>
+
+    <TextView
+        android:id="@+id/amounttextview"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="0"
+        android:layout_below="@+id/plusButton"
+        android:layout_alignParentLeft="true"/>
+    <Button
+        android:id="@+id/minusButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="-"
+        android:layout_below="@+id/amounttextview"
+        android:layout_alignParentLeft="true"
+        android:layout_marginBottom="20dp"
+        android:layout_alignRight="@+id/plusButton"
+        android:layout_alignEnd="@+id/plusButton"
+        android:onClick="plusClick1"/>
+
+    <TextView
+        android:id="@+id/priceTextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Price"
+        android:layout_below="@+id/minusButton"
+        android:textAllCaps="true"
+        android:layout_alignParentLeft="true"/>
+    <TextView
+        android:id="@+id/totalPricetextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="$0"
+        android:layout_below="@+id/priceTextView"
+        android:textAllCaps="true"
+        android:layout_alignParentLeft="true"
+        android:layout_marginBottom="20dp"/>
+    <Button
+        android:id="@+id/orderButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Order"
+        android:layout_below="@+id/totalPricetextView"
+        android:layout_alignParentLeft="true"
+        android:onClick="orderClick"/>
+
+</RelativeLayout>
